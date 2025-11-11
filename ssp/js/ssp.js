@@ -32,7 +32,7 @@ function playGame() {
     let humanScore=0;
     let computerScore=0;
     while(humanScore<3&&computerScore<3) {
-        let result =  playRound();
+        let result = playRound();
         if(result=="hs") humanScore+=1;
         if(result=="cs") computerScore+=1;
     };
@@ -40,6 +40,9 @@ function playGame() {
     if(computerScore>humanScore) alert("YOU LOSE!");
 }
 
-let p = prompt("START?"," ");
-p=p.toLowerCase();
-if (p=="yes") playGame();
+function start() {
+    let p = prompt("START? Yes or No?"," ");
+    p=p.toLowerCase();
+    if (p=="yes") {playGame();start()}
+}
+start()

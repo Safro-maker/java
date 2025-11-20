@@ -49,7 +49,7 @@ if (n < 1) {
 } else {
   alert( pow(x, n) );
 }*/                                                            //возыедение в степень с любыми значениями
-let age = 16; // take 16 as an example
+/*let age = 16; // take 16 as an example
 
 if (age < 18) {
   welcome();               // \   (runs)
@@ -70,4 +70,63 @@ if (age < 18) {
 // Here we're out of curly braces,
 // so we can not see Function Declarations made inside of them.
 
-welcome(); // Error: welcome is not defined
+welcome(); // Error: welcome is not defined*/
+/*p=Number(prompt("Number?"," "));
+for(let i=10;i<=p;i++){
+  alert(i);
+}*/
+/*["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+  alert(`${item} is at index ${index} in ${array}`);
+});*/
+/*let strr = "list-style-image";
+function camelize(str) {
+  mass=str.split("-");
+  mass=mass.map((word,index) => index==0 ? word : word[0].toUpperCase() + word.slice(1));
+  mas=mass.join("");
+  return mas;
+}
+console.log(camelize(strr));*/
+/*function filterRange(arr,a,b) {
+  return arr=arr.filter(item => (a<=item&&b>=item));
+}
+let arr=[5,3,8,1];
+let filtered = filterRange(arr,1,4);
+console.log(arr);
+console.log(filtered);*/
+/*function sorted(arr) {
+  let red = arr.slice().sort();
+  return red;
+}
+let array = ["Albion", "DOTA2", "CS2", "VALHEIM"];
+console.log(sorted(array));
+console.log(array);*/
+const container = document.querySelector("#container");
+const p = document.createElement("p");
+  p.classList.add("p");
+    p.textContent = "Hey! I am red!";
+      p.setAttribute("style", "color:red");
+  container.appendChild(p);
+const h3 = document.createElement("h3");
+  h3.classList.add("h3");
+    h3.textContent = "I am blue h3!";
+      h3.setAttribute("style","color:blue");
+  container.appendChild(h3);
+const div = document.createElement("div");
+  div.classList.add("div");
+    div.setAttribute("style", "border:2px solid black;background-color:pink;");
+const hdiv = document.createElement("h1");
+  hdiv.classList.add("hdiv");
+    hdiv.textContent = "I am in block!";
+const pdiv = document.createElement("p");
+  pdiv.classList.add("pdiv");
+    pdiv.textContent = "I am too!";
+div.appendChild(hdiv);
+div.appendChild(pdiv);
+container.appendChild(div);
+let btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+  alert("It was clicked!");
+});
+
+
+
